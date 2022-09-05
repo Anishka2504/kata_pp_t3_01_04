@@ -1,6 +1,5 @@
 package edu.kata.task314.dto;
 
-import edu.kata.task314.dto.parent.NameDto;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +9,12 @@ import java.util.Set;
 
 @Getter
 @Setter
-public class UserDto extends NameDto {
+public class UserDto{
+
+    private Long id;
+
+    @NotNull
+    private String name;
 
     @NotNull
     @Email
